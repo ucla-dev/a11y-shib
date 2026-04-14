@@ -21,63 +21,33 @@
           </div>
         </div>
 
-        <h1 id="page-title">Sign In with your UCLA Logon ID (Required)</h1>
+        <section class="privacy" aria-labelledby="privacy-title" aria-live="polite">
+          <h1 id="privacy-title">Privacy, Security & Legal</h1>
 
-        <form class="login-form" action="#" method="post" novalidate aria-describedby="form-help">
-          <p id="form-help" class="sr-only" hidden>
-            All fields on this form are required.
-          </p>
+          <p>These sites are owned by The Regents of the University of California and operated by UCLA. UCLA encourages the use of these sites as a way to share information and knowledge in support of the University's three-part mission of education, research and public service. Site content is subject to change without notice. While most sites are publicly accessible, certain services and information offered online may be restricted to specific users or segments of the UCLA population.</p>
 
-          <div class="field">
-            <label for="ucla-logon-id">UCLA Logon ID (Required)</label>
-            <input
-              id="ucla-logon-id"
-              name="uclaLogonId"
-              type="text"
-              autocomplete="username"
-              aria-describedby="ucla-logon-id-error"
-              required
-              aria-required="true"
-              aria-invalid="true"
-            />
-            <div id="ucla-logon-id-error" class="error-message" aria-live="assertive">UCLA Logon IDs consist of 2 to 15 lower case letters and numbers.</div>
-          </div>
+          <p>To protect your account, the UCLA Single Sign-On Service prevents old or previously used login pages from use. You may have clicked browser's back button or waited too long at the Logon page before signing in. Further, this service uses cookies and javascript in your web browser.</p>
 
-          <div class="field">
-            <label for="ucla-logon-password">UCLA Logon Password (Required)</label>
-            <input
-              id="ucla-logon-password"
-              name="uclaLogonPassword"
-              type="password"
-              autocomplete="current-password"
-              aria-describedby="ucla-logon-password-error"
-              required
-              aria-required="true"
-              aria-invalid="true"
-            />
-            <div id="ucla-logon-password-error" class="error-message" aria-live="assertive">Passwords are at least 6 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().,</div>
-          </div>
+          <p>Please make sure that cookies and JavaScript are enabled and restart your login attempt. Enter the application's web address directly in your browser. A bookmarked UCLA Logon page won't work.</p>
 
-          <div class="button-row">
-            <button type="submit">Sign In</button>
-          </div>
-        </form>
+          <p>For further assistance please contact the IT Support Center at help@it.ucla.edu, copying the information below and filling in missing items if necessary:</p>
 
-        <section class="links" aria-labelledby="help-links-title">
-          <h2 id="help-links-title">Forgot your UCLA Login ID or Password?</h2>
-          <p>Retrieve <a href="https://accounts.iam.ucla.edu/lookup">UCLA Login ID</a> or <a href="https://accounts.iam.ucla.edu/security/reset">Password</a></p>
-          <p><a href="https://accounts.iam.ucla.edu/register">Get a UCLA Logon ID</a></p>
-        </section>
+          <h2>Terms of Use</h2>
+          <h3>Your Responsibility</h3>
 
-        <section class="health-section" aria-labelledby="health-title">
-          <h2 id="health-title">Are you a member of UCLA Health Sciences?</h2>
-          <form action="/shibboleth-idp/profile/SAML2/Redirect/SSO?execution=e8s2" method="post">
-            <input type="hidden" name="_eventId" value="medcenter">
-            <input type="hidden" name="proxy" value="medcenter">
-            <button type="submit" class="link-button">
-              Go to Mednet Login
-            </button>
-          </form>
+          <p>UCLA grants permission to members of the University community to use computing resources by issuing individual computing accounts including UCLA Logon IDs. In order to create a UCLA Logon, you must first agree to the terms below. You may not create an account if you do not accept the terms. Continuing with the account creation process constitutes agreement.</p>
+
+          <p>As a condition of receiving an account, you must observe the following guidelines:</p>
+
+          <ul>
+            <li>Respect the rights of other users, respect the integrity of the systems and related physical resources, and observe all relevant laws, regulations, and contractual obligations.</li>
+            <li>Respect others' rights to the privacy of their programs and data.</li>
+          </ul>
+
+          <p>etc...</p>
+
+          <p><a href="index.html" class="btn btn-light-gray">&laquo; Back to login</a></p>
+          
         </section>
 
         <section class="legal-links" aria-live="polite">

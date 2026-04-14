@@ -208,6 +208,10 @@ button:hover {
   padding: 1rem;
 }
 
+.system-message--error {
+  background: #FEF4F4;
+}
+
 .system-message[aria-live] {
   outline: none;
 }
@@ -257,6 +261,36 @@ button:hover {
   .brand-row {
     align-items: flex-start;
   }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-light-gray {
+  background-color: #f3f4f6;
+  color: #333;
+  border: 1px solid #d1d5db;
+}
+
+.btn-light-gray:hover {
+  background-color: #e5e7eb;
+  border-color: #c7cdd4;
+}
+
+.btn-light-gray:active {
+  background-color: #d1d5db;
+}
+
+.btn-light-gray:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(209, 213, 219, 0.6);
 }
 
 /*Start of Demo Navigation*/
