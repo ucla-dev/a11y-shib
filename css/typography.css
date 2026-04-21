@@ -1,0 +1,7 @@
+.heading--blue {
+  color: #347bad;
+}
+
+.heading--red {
+  color: var(--danger);
+}

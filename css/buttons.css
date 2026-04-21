@@ -1,0 +1,17 @@
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 3px;
+  min-height: 2rem;
+  padding: .6rem 1.25rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: #0d4d7f;
+  color: #fff;
+}
+
+button:hover {
+  background: #1f5f8f;
+  cursor: pointer;
+}

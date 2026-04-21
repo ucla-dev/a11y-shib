@@ -1,0 +1,14 @@
+:root {
+  --page-bg: #f5f7fa;
+  --surface: #ffffff;
+  --border: #d6dce5;
+  --text: #555;
+  --muted: #4b5563;
+  --focus: #1d4ed8;
+  --danger: #ce3635;
+  --danger-bg: #fef3f2;
+  --link: #8237ff;
+  --link-hover: #193747;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --msg-bg: rgba(240,248,255,0.85);
+}

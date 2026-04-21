@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: ProximaNova, "Proxima Nova", Verdana, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: url(../images/skyline.jpg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,4 @@
+.header {
+  width: clamp(10rem, 17vw, 18rem);
+  margin: 3rem auto 2rem;
+}

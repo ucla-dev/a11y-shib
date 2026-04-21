@@ -1,0 +1,15 @@
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 2px solid var(--focus);
+  border-radius: 0.5rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
