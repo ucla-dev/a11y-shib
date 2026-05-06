@@ -4,7 +4,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
   border-top: 1px solid #00a5e5;
-  padding: .75rem .25rem .25rem;
+  padding: .75rem .25rem .75rem;
   text-align: center;
 }
 
@@ -41,4 +41,8 @@
 
 .footer a:active {
   color: #aaa;
+}
+
+.footer p {
+  margin: 0;
 }

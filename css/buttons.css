@@ -9,6 +9,7 @@ button {
   cursor: pointer;
   background: #0d4d7f;
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 button:hover {

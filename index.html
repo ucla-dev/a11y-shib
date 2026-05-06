@@ -16,7 +16,7 @@
       </header>
       <section class="panel" aria-labelledby="page-title">
 
-        <h1 id="page-title" class="heading heading--blue">Sign In with your UCLA Logon ID</h1>
+        <h1 id="page-title" class="heading heading--blue heading--light">Sign In with your UCLA Logon ID</h1>
 
         <form class="login-form" action="#" method="post" novalidate aria-describedby="form-help">
           <p id="form-help" class="sr-only" hidden>
@@ -52,17 +52,12 @@
             <div id="ucla-logon-password-error" class="error-message" role="alert" aria-live="polite" hidden></div>
           </div>
 
-          <div class="button-n-links">
-            <div class="button-col">
-              <button type="submit">Sign In</button>
-            </div>
-
-            <section class="links">
-              <ul>
-                <li>Forgot your <a href="https://accounts.iam.ucla.edu/lookup">UCLA Login ID</a> or <a href="https://accounts.iam.ucla.edu/security/reset">Password</a>?</li>
-                <li><a href="https://accounts.iam.ucla.edu/register">Need a UCLA Logon ID</a></li>
-              </ul>
-            </section>
+          <div class="flex">
+            <div><button type="submit">Sign In</button></div>
+            <ul class="list list--flush-top">
+              <li>Forgot your <a href="https://accounts.iam.ucla.edu/lookup">UCLA Login ID</a> or <a href="https://accounts.iam.ucla.edu/security/reset">Password</a>?</li>
+              <li><a href="https://accounts.iam.ucla.edu/register">Need a UCLA Logon ID</a></li>
+            </ul>
           </div>
           
         </form>
@@ -115,7 +110,7 @@
         <li><a href="./error-http-403-404.html">Error - HTTP 403/404</a></li>
         <li><a href="./error-http-500s.html">Error - HTTP 500s</a></li>
         <li><a href="./error-new.html">Error - New</a></li>
-        <li><a href="./logon-form.html">Logon Form</a></li>
+        <li><a href="./index.html">Logon Form</a></li>
         <li><a href="./logon-form-after-failed-login.html">Logon Form after Failed Login</a></li>
         <li><a href="./logon-form-timed-out.html">Logon Form Timed Out</a></li>
         <li><a href="./logon-form-w-custom-sp-news.html">Logon Form w/ Custom SP News</a></li>

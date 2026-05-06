@@ -7,21 +7,24 @@
   max-width: 36rem;
   margin: 0 auto 4rem;
   display: grid;
-  gap: 1rem;
+  /*gap: 1rem;*/
   align-content: center;
 }
 
 .panel {
   background: var(--surface);
-  border: 1px solid var(--border);
   border-radius: 4px;
   box-shadow: var(--shadow);
-  padding: clamp(2rem, 4vw, 2rem) clamp(2rem, 5vw, 3rem);
+  padding: 2rem;
   margin-bottom: 1rem;
 }
 
 .panel--message {
 	background-color: var(--msg-bg);
+}
+
+.flex {
+  display: flex;
 }
 
 @media (max-width: 30rem) {
@@ -31,5 +34,9 @@
 
   .panel {
     padding: 1rem;
+  }
+
+  .flex {
+    display: block;
   }
 }

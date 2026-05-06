@@ -1,0 +1,66 @@
+/* =========================
+   Base Link Styles
+   ========================= */
+a {
+    color: #6f2cff; /* darker, safer contrast */
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+/* =========================
+   Visited Links
+   ========================= */
+a:visited {
+    color: #5a23b8;
+}
+
+/* =========================
+   Hover & Focus
+   ========================= */
+a:hover,
+a:focus-visible {
+    color: #193747;
+    text-decoration-color: currentColor;
+}
+
+/* =========================
+   Focus Styles (Keyboard)
+   ========================= */
+a:focus-visible {
+    outline: 2px solid #193747;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* =========================
+   Active State
+   ========================= */
+a:active {
+    color: #0f2530;
+}
+
+/* =========================
+   Disabled / Inactive Links
+   ========================= */
+a[aria-disabled="true"],
+a.disabled {
+    color: #6b6b6b; /* passes contrast, still looks “off” */
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+/* =========================
+   External Links (Optional)
+   ========================= */
+a[target="_blank"]::after {
+    content: "↗";
+    font-size: 0.8em;
+    margin-left: 4px;
+}

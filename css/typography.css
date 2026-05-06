@@ -5,3 +5,18 @@
 .heading--red {
   color: var(--danger);
 }
+
+.heading--light {
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
