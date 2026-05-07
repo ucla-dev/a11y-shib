@@ -3,7 +3,9 @@
    ========================= */
 a {
     color: #6f2cff; /* darker, safer contrast */
-    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px; /* thinner line */
+    text-underline-offset: 3px; /* space between text and line */
     line-height: inherit;
     cursor: pointer;
     transition: color 0.2s ease, text-decoration-color 0.2s ease;
@@ -23,6 +25,7 @@ a:hover,
 a:focus-visible {
     color: #193747;
     text-decoration-color: currentColor;
+    text-decoration: none;
 }
 
 /* =========================

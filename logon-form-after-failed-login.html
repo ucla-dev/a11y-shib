@@ -38,9 +38,9 @@
               aria-describedby="ucla-logon-id-error"
               required
               aria-required="true"
-              autofocus
+              aria-invalid="true"
             />
-            <div id="ucla-logon-id-error" class="error-message" role="alert" aria-live="polite" hidden></div>
+            <div id="ucla-logon-id-error" class="error-message" role="alert" aria-live="polite">UCLA Logon IDs consist of 2 to 15 lower case letters and numbers.</div>
           </div>
 
           <div class="field">
@@ -53,8 +53,9 @@
               aria-describedby="ucla-logon-password-error"
               required
               aria-required="true"
+              aria-invalid="true"
             />
-            <div id="ucla-logon-password-error" class="error-message" role="alert" aria-live="polite" hidden></div>
+            <div id="ucla-logon-password-error" class="error-message" role="alert" aria-live="polite">Passwords are at least 6 characters long and can consist of letters, numbers, and the following symbols: !@#$%^&*().,</div>
           </div>
 
           <div class="button-n-links">

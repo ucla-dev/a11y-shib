@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "axe-core": "^4.11.4",
+    "concurrently": "^9.2.1",
+    "cypress": "^15.14.2",
+    "cypress-axe": "^1.7.0",
+    "typescript": "^6.0.3",
+    "wait-on": "^9.0.5"
+  },
+  "scripts": {
+    "serve:docs": "python3 -m http.server 8080",
+    "pretest:a11y": "node scripts/generate-a11y-pages.mjs",
+    "test:a11y": "npm run pretest:a11y && cypress run",
+    "cy:open": "cypress open",
+    "test": "npm run pretest:a11y && concurrently -k -n server,cypress -c blue,green \"npm run serve:docs\" \"wait-on http://localhost:8080 && npm run cy:open\""
+  }
+}

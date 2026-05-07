@@ -10,7 +10,9 @@
 
 .footer a {
   color: #fff;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px; /* thinner line */
+  text-underline-offset: 3px; /* space between text and line */
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
@@ -20,13 +22,13 @@
 
 .footer a:hover {
   color: #ccc;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer a:focus {
   outline: 2px solid #fff;
   outline-offset: 2px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer a:focus:not(:focus-visible) {

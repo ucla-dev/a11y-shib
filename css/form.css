@@ -9,7 +9,8 @@
 }
 
 .field label {
-  font-weight: 400;
+  font-weight: 600;
+  color: #666;
 }
 
 .field input {
@@ -33,6 +34,7 @@
   min-height: 1.25rem;
   color: var(--danger);
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .error-message[hidden] {
