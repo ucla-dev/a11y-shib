@@ -16,6 +16,8 @@
   border-radius: 4px;
   box-shadow: var(--shadow);
   padding: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -28,9 +30,6 @@
 }
 
 @media (max-width: 30rem) {
-  .page {
-    padding: 0.75rem;
-  }
 
   .panel {
     padding: 1rem;

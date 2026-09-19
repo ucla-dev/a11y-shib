@@ -4,6 +4,7 @@
     "concurrently": "^9.2.1",
     "cypress": "^15.14.2",
     "cypress-axe": "^1.7.0",
+    "cypress-real-events": "^1.15.1",
     "typescript": "^6.0.3",
     "wait-on": "^9.0.5"
   },

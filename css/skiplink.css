@@ -1,8 +1,13 @@
 .skip-link {
   position: absolute;
-  left: -9999px;
   top: 0;
+  left: 0;
   z-index: 1000;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
   padding: 0.75rem 1rem;
   background: #fff;
   border: 2px solid var(--focus);
@@ -10,6 +15,11 @@
 }
 
 .skip-link:focus {
-  left: 1rem;
   top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip-path: none;
+  white-space: normal;
 }

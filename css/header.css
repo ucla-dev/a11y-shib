@@ -1,4 +1,41 @@
+/* Reset */
+.header,
+.header * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for below 544px (mobile-first base) */
 .header {
-  width: clamp(10rem, 17vw, 18rem);
-  margin: 3rem auto 2rem;
+  background: rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid #00a5e5;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.header :where(#ucla-box-black) {
+  width: 138px;
+}
+
+/* Styling for 544px and up */
+@media (min-width: 34rem) {
+  .header {
+    background: none;
+    border-bottom: none;
+    margin: 3rem auto 2rem;
+    padding: 0;
+    width: clamp(10rem, 17vw, 18rem);
+  }
+
+  .header :where(#ucla-box-black) {
+    width: inherit;
+  }
 }
