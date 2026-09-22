@@ -18,7 +18,7 @@
 
         <h1 id="page-title" class="heading heading--blue heading--light">Sign In with your UCLA Logon ID</h1>
 
-        <form class="login-form" action="#" method="post" novalidate aria-describedby="form-help">
+        <form class="login-form" action="#" method="post" novalidate aria-labelledby="page-title" aria-describedby="form-help">
           <p id="form-help" class="sr-only" hidden>
             All fields on this form are required.
           </p>
@@ -33,6 +33,7 @@
               aria-describedby="ucla-logon-id-error"
               required
               aria-required="true"
+              autofocus
             />
             <div id="ucla-logon-id-error" class="error-message" role="alert" aria-live="polite" hidden></div>
           </div>

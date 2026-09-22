@@ -23,7 +23,7 @@
           <p>Try again below, <a href="https://logon.ucla.edu/userlookup.php" title="Lookup your UCLA Logon ID">lookup your UCLA Logon ID</a>, or <a href="https://logon.ucla.edu/passreset.php" title="Reset your password">reset your password</a>.</p>
         </section>
 
-        <form class="login-form" action="#" method="post" novalidate aria-describedby="form-help">
+        <form class="login-form" action="#" method="post" novalidate aria-labelledby="page-title" aria-describedby="form-help">
           <p id="form-help" class="sr-only" hidden>
             All fields on this form are required.
           </p>
@@ -39,6 +39,7 @@
               required
               aria-required="true"
               aria-invalid="true"
+              autofocus
             />
             <div id="ucla-logon-id-error" class="error-message" role="alert" aria-live="polite">UCLA Logon IDs consist of 2 to 15 lower case letters and numbers.</div>
           </div>

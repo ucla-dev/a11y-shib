@@ -67,6 +67,35 @@ describe('A11y links and states', () => {
           })
         })
     })
+
+    it(`checks focused-link color contrast on ${page}`, () => {
+      cy.visit(page)
+      cy.injectAxe()
+
+      cy.get('body')
+        .find('a[href]')
+        .not('.demo-nav a')
+        .then(($links) => {
+          const visibleLinks = $links.filter(':visible')
+
+          if (!visibleLinks.length) return
+
+          visibleLinks.each((_i, el) => {
+            const $a = Cypress.$(el) as JQuery<HTMLAnchorElement>
+            const href = $a.attr('href') || ''
+
+            if (href === '#' || href.startsWith('javascript:')) return
+
+            // Scoping the axe run to just this link, while it's genuinely
+            // focused, means color-contrast is evaluated against whatever
+            // color the :focus/:focus-visible rules actually apply — not
+            // just the resting-state color already covered by the page-wide
+            // scan above.
+            cy.wrap(el).then(($e) => $e.trigger('focus'))
+            cy.checkA11y(el, { runOnly: { type: 'rule', values: ['color-contrast'] } })
+          })
+        })
+    })
   })
 
   it('checks form labels, required state, and hidden error state on the login page', () => {
