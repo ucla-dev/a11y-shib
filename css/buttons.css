@@ -16,3 +16,12 @@ button:hover {
   background: #1f5f8f;
   cursor: pointer;
 }
+
+button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
